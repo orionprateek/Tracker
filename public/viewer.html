@@ -1,0 +1,48 @@
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                                //
+//  filename : viewer.html                                                                                        //
+//  author: Prateek Pandey(Digital)                                                                               //
+//  language: HTML5                                                                                               //
+//  description: This is the html file that displays the map                                                      //
+//  input: NA                                                                                                     //
+//  output: NA                                                                                                    //
+//                                                                                                                //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <!-- defining the styles -->
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map{
+        height: 100%;
+      }
+    </style>
+    <title>Map Viewer</title>
+  </head>
+  <body>
+
+    <!-- creating the div with map id where the map will be dynamically loaded -->
+    <div id="map"></div>
+
+    <!-- loading the socket io script -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- loading the viewer script -->
+    <script src="./js/viewer.js"></script>
+
+    <!-- loading the google map script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnC8r1w1v9fjttt1ZJCNR2_hfPCVe0eJo&callback=initMap"
+    async defer></script>
+  </body>
+</html>
